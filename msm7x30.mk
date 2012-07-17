@@ -48,8 +48,7 @@ PRODUCT_COPY_FILES += \
     device/semc/msm7x30-common/prebuilt/bootrec:root/sbin/bootrec \
     device/semc/msm7x30-common/prebuilt/postrecoveryboot.sh:root/sbin/postrecoveryboot.sh \
     device/semc/msm7x30-common/prebuilt/media_codecs.xml:system/etc/media_codecs.xml \
-    device/semc/msm7x30-common/prebuilt/audio_policy.conf:system/etc/audio_policy.conf \
-    device/semc/msm7x30-common/prebuilt/prebuilt/libwvm.so:/system/lib/libwvm.so
+    device/semc/msm7x30-common/prebuilt/audio_policy.conf:system/etc/audio_policy.conf 
 
 #recovery resources
 PRODUCT_COPY_FILES += \

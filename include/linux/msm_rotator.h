@@ -28,6 +28,7 @@
  */
 
 #ifndef __MSM_ROTATOR_H__
+#define __MSM_ROTATOR_H__
 
 #include <linux/types.h>
 #include <linux/msm_mdp.h>
@@ -44,7 +45,7 @@
 #define ROTATOR_VERSION_01	0xA5B4C301
 
 enum rotator_clk_type {
-	ROTATOR_AXI_CLK,
+	ROTATOR_CORE_CLK,
 	ROTATOR_PCLK,
 	ROTATOR_IMEM_CLK
 };

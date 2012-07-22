@@ -48,7 +48,11 @@ PRODUCT_COPY_FILES += \
     device/semc/msm7x30-common/prebuilt/bootrec:root/sbin/bootrec \
     device/semc/msm7x30-common/prebuilt/postrecoveryboot.sh:root/sbin/postrecoveryboot.sh \
     device/semc/msm7x30-common/prebuilt/media_codecs.xml:system/etc/media_codecs.xml \
-    device/semc/msm7x30-common/prebuilt/audio_policy.conf:system/etc/audio_policy.conf 
+    device/semc/msm7x30-common/prebuilt/audio_policy.conf:system/etc/audio_policy.conf
+
+# Camera
+PRODUCT_COPY_FILES += \
+    device/semc/msm7x30-common/prebuilt/libsurfaceflinger_client.so:system/lib/libsurfaceflinger_client.so
 
 #recovery resources
 PRODUCT_COPY_FILES += \
@@ -71,7 +75,8 @@ PRODUCT_COPY_FILES += \
     bootable/recovery/res/images/indeterminate05.png:root/res/images/indeterminate05.png \
     bootable/recovery/res/images/indeterminate06.png:root/res/images/indeterminate06.png \
     bootable/recovery/res/images/progress_empty.png:root/res/images/progress_empty.png \
-    bootable/recovery/res/images/progress_fill.png:root/res/images/progress_fill.png
+    bootable/recovery/res/images/progress_fill.png:root/res/images/progress_fill.png \
+    bootable/recovery/res/images/stitch.png:root/res/images/stitch.png
 
 #Audio
 PRODUCT_PACKAGES += \
@@ -143,6 +148,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_UTC_DATE=0 \
     hwui.render_dirty_regions=false \
     hwui.disable_vsync=true \
-    persist.sys.usb.config=mass_storage \
-    debug.camcorder.disablemeta=1
+    persist.sys.usb.config=mass_storage,adb \
+    debug.camcorder.disablemeta=1 \
+    wifi.interface=wlan0
 

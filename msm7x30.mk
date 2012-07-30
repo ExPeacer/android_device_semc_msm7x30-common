@@ -50,10 +50,6 @@ PRODUCT_COPY_FILES += \
     device/semc/msm7x30-common/prebuilt/media_codecs.xml:system/etc/media_codecs.xml \
     device/semc/msm7x30-common/prebuilt/audio_policy.conf:system/etc/audio_policy.conf
 
-# Camera
-PRODUCT_COPY_FILES += \
-    device/semc/msm7x30-common/prebuilt/libsurfaceflinger_client.so:system/lib/libsurfaceflinger_client.so
-
 #recovery resources
 PRODUCT_COPY_FILES += \
     bootable/recovery/res/images/icon_firmware_error.png:root/res/images/icon_firmware_error.png \
